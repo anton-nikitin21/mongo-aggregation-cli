@@ -1,2 +1,21 @@
-# mongo-aggregation-cli
-MongoDB: JSON-импорт и aggregation pipeline через консоль
+# MongoDB Aggregation CLI
+
+Консольная загрузка JSON в MongoDB и выполнение aggregation pipeline.
+
+Проект из учебного портфолио Антона Никитина. Исходные наработки сохранены; подготовка документации и публикации выполнена с помощью ИИ.
+
+## Запуск
+
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+python main.py
+```
+
+## Состав и ограничения
+
+Требуется локальная MongoDB на `localhost:27017`. Пункт импорта очищает выбранную коллекцию перед загрузкой — используйте отдельную учебную базу. JSON-данные и pipeline указываются через меню.
+
+В репозиторий включён исходный код. Локальные пароли, окружения, базы, журналы и частные наборы данных исключены. Результаты и метрики не заявляются без воспроизводимой проверки.
